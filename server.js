@@ -19,9 +19,9 @@ app.use(fileUpload());
 
 app.use(express.static(path.join(__dirname, "client", "build")));
 
-// const uri =  process.env.HEROKU_URI||process.env.ATLAS_URI
+const uri =  process.env.HEROKU_URI||process.env.ATLAS_URI
 // console.log(uri);
-mongoose.connect(process.env.MONGODB_UR ||process.env.ATLAS_URI)
+
 // mongoose.connect(uri, { useNewUrlParser:true, useCreateIndex: true });
 // .catch(err => {
 //     console.error('App starting error:', err.stack);
