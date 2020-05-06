@@ -14,9 +14,8 @@ function App() {
       <Switch>
         <div className="container-fluid">
           <Route path="/view/:pageId" component= {BusinessView} />
-          <Route path="/add" component= {BusinessAdd} />
-          {/* <Route path="/edit" render ={(props) =>< BusinessEdit {...props}/>} />                           */}
-          <Route path = '/edit/:pageId' component = {BusinessEdit} />
+          <Route path="/add" component= {BusinessAdd} />          
+          <Route exact path = '/edit/:pageId' component = {BusinessEdit} />
           <Route exact path="/" component= {Home} />
         </div>
       </Switch>

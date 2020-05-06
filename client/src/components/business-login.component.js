@@ -46,14 +46,14 @@ export default class BusinessLogin extends Component {
             password: this.state.password
         }
         
-    //    axios.post('http://localhost:5000/business/login/', user)
-       axios.post('/business/login/', user)
+       axios.post('http://localhost:5000/business/login/', user)
+    //    axios.post('/business/login/', user)
             .then(res=> {
                 console.log(res.data);
-                //  window.location = 'edit/' + res.data;
+                 window.location = 'edit/' + res.data;
             //    window.open("/edit/" + res.data, "_self");
                 //    window.location.assign('/edit/'+ res.data);
-              this.props.history.push('/edit/'+ res.data); // <--- The page you want to redirect your user to.
+            //   this.props.history.push('/edit/'+ res.data); // <--- The page you want to redirect your user to.
 
             })
             .catch((error) => {

@@ -32,7 +32,7 @@ export default class Home extends Component {
                        Sample Sites
                     </h3>
 
-                    <Link to="http://localhost:3000/edit/diversionspgports">
+                    <Link to="/view/diversionspgports">
                         Diversions
                     </Link>
                 </div>

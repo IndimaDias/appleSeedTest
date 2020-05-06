@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"   
+    "start": "node server.js",
+    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
   },
   "cacheDirectories": [
     "client/node_modules",
@@ -20,5 +21,8 @@
     "mongoose": "^5.9.5",
     "node-sessionstorage": "^1.0.0"
   },
-  "description": ""
+  "description": "",
+  "engines": {
+    "node": "10.15.1"
+  }
 }
