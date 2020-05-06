@@ -383,7 +383,7 @@ export default class BusinessAdd extends Component {
     
         console.log(business);
 
-        axios.post('/business/add/', business)
+        axios.post('business/add/', business)
             .then(res=> {
                 console.log(res.data)
                 window.location = '/edit/' + business.pageId;
