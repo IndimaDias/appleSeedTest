@@ -386,7 +386,7 @@ export default class BusinessAdd extends Component {
         axios.post('business/add/', business)
             .then(res=> {
                 console.log(res.data)
-                window.location = '/edit/' + business.pageId;
+                window.location = 'edit/' + business.pageId;
             })
             .catch((error) => {
                 console.log("ERR" + error.response.data);
