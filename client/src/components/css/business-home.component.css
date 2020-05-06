@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Mukta');
+
+.container-fluid{
+    font-family: 'Mukta', sans-serif;
+       height:100vh;
+       width: 100%;
+      /* min-height:550px; */ 
+      /* position:relative;
+      overflow-y: hidden; */
+      background-color: black;
+  }
+
+.container-home{
+    /* max-width: max-content; */
+    background-image: url('../images/alvaro-serrano--kr8XPYuSI8-unsplash.jpg');      
+    background-repeat: no-repeat;
+    background-size:cover;      
+    background-position:center;
+    height: -webkit-fill-available;
+    background-color: black;
+}
+
+  
+  
+  .login-reg-panel{
+    border-radius: 25px;
+    position: relative;
+    top: 50%;
+    transform: translateY(25%);
+	text-align:center;
+    width:35%;
+	right:0;left:0;
+    margin-left: 65%;
+    background-color: white;
+    padding: 20px;
+}
+
+.clientsPanel{
+    padding: 15px;
+    border-radius: 25px;
+    position: relative;
+    top: 10%    ;
+    transform: translateY(-65%);
+	text-align:center;
+    width:30%;
+	right:0;left:0;
+    margin-left: 10%;
+    height:100px;
+    background-color: white;
+}
+
+.heading-MS{
+    padding-top: 30px;  
+    font-family: initial;
+    /* font-size: 40px;  */
+}   
+
+.businessDetail{
+    margin: 20px;
+    text-align: justify;
+}
+
+.btnRegister{
+    color: white ;
+    padding:"5px 10px";
+    margin:30px;
+}
+
+.h6Message{
+    text-align: left;
+    margin-left: 10px;
+}

@@ -1,0 +1,16 @@
+Report: ede51d63-c501-407a-86ba-1ec74e47b9b2
+
+Creating User: 7e3a2763-acb3-44b2-b237-a62a8f753354
+
+https://maestro7.dev.dictumhealth.com:7101/registrationportal
+
+1474296986597
+1474296986597
+1474296986597 20eab5ee-cb07-4451-b911-c9463537fab8
+1473799578732 9f1c5cc7-f347-44c8-8667-22317540496b
+
+SELECT al.uuid, al.createDate, al.createDateUtc FROM activity_log al WHERE al.domain=:DOMAIN_ID  ORDER BY al.createDateUtc DESC
+
+SELECT al.uuid, al.createDate, al.createDateUtc FROM activity_log al WHERE al.domain=:DOMAIN_ID AND ( al.detailId1= :DETAIL_ID1 OR al.targetUser= :TARGET_USER_ID ) )  ORDER BY al.createDateUtc DESC
+
+

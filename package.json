@@ -1,0 +1,24 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"   
+  },
+  "cacheDirectories": [
+    "client/node_modules",
+    "server/node_modules"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.7-alpha.3",
+    "mongoose": "^5.9.5",
+    "node-sessionstorage": "^1.0.0"
+  },
+  "description": ""
+}

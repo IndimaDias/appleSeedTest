@@ -1,0 +1,87 @@
+.container-view{
+    /* max-width: max-content; */
+    /* background-image: url('../images/annie-spratt-yI3weKNBRTc-unsplash.jpg');       */
+    background-color: rgb(41, 39, 39);
+    background-repeat: no-repeat;
+    background-size:cover;      
+    background-position:center;
+    padding-top: 50px;
+    padding-bottom: 50px;  
+}
+
+.container-md{
+    background-color: white;
+    border: #472511 solid 50px;
+    border-image: url('../images/keith-misner-h0Vxgz5tyXA-unsplash.jpg');
+    border-image-slice: 20;
+    border-radius: 25px;
+    padding: 40px;
+    padding-top: 0px;
+
+}
+.h1BusinessName{
+    text-align: center;
+    margin: 30px;
+    padding-top: 50px;
+}
+
+.businessLead{
+    text-align: justify;
+    margin: 40px 0;
+}
+
+.section{
+    margin: 10px 0;
+}
+
+.subHead{
+    margin: 8px;
+}
+
+.subsection{
+    padding:30px;
+    padding-top: 2px;
+    font-style: initial;
+    font-size: 18px;
+    text-align: left;
+}
+
+.btnTwitter{
+    width: 100px;
+    padding: 3px 30px;
+    border-radius: 5px;
+}
+
+.btnInst{
+    width: 100px;
+    padding: 3px 30px;
+    border-radius: 5px;
+}
+
+.btnFB{
+    color: white;
+    background-color: rgba(17, 27, 193, 0.96);
+    width: 100px;
+    padding: 3px 30px;
+    border-radius: 5px;
+}
+
+.salesURL{
+    color: green;
+}
+
+.deliveryText{
+    text-align: justify;
+}
+
+.divLinks{
+    margin: 7px 0;
+}
+
+.spacer{
+    margin: 30px;
+}
+
+.texta {
+    white-space: pre-wrap;
+}

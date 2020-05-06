@@ -1,0 +1,109 @@
+.container-edit{
+    /* max-width: max-content; */
+    background-image: url('../images//patrick-tomasso-QMDap1TAu0g-unsplash.jpg');      
+    background-repeat: no-repeat;
+    background-size:cover;      
+    background-position:center;
+    padding-top: 50px;
+    padding-bottom: 50px;    
+}
+
+
+
+.container{
+    background-color: white;
+    padding:5%;
+    border: solid 20px aliceblue;
+}
+
+.editPageHeading{
+    margin-bottom: 40px;
+}
+
+.rowPageData{
+    margin-top : 30px;
+    margin-bottom: 20px;
+}
+
+.divLogin{
+    margin-top : 30px;
+    margin-bottom: 20px;
+}
+
+input[type="file"] {
+    display: none;
+  }
+
+.inputImageIcon{
+    cursor: pointer;
+    text-align: center;    
+    margin:auto;
+    width:100%;
+}
+
+.uploadedImage{
+    height: 100px;
+}
+
+.icon1{
+    margin: 25px 2px 2px 2px;
+}
+
+.uploadIcon{
+    text-align: center;
+    margin-left: 40%;
+    border: 1px dashed;
+    width: 80px;
+    
+
+}
+
+.uploadLabel{
+    width: 100%;
+    text-align: center;    
+    margin: auto;
+    font-size: 12px;
+}
+
+.site-link{
+    font-size: 24px;
+}
+  
+.form-control{
+    margin-top: 0px;
+}
+
+.form-group2{
+   padding: 0px;
+}
+
+.addPageHeading{
+    margin-bottom: 40px;
+}
+
+.help-block{
+    margin-left:5px;
+}
+
+.l1{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.l2{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.show-image {
+    padding-right: 60px;
+}
+
+.texta {
+    white-space: pre-wrap;
+}
+
+.imageHelp {
+    padding: 50px;
+}
+
