@@ -22,10 +22,12 @@ app.use(express.static(path.join(__dirname, "client/build")));
 const uri =  process.env.HEROKU_URI||process.env.ATLAS_URI
 // console.log(uri);
 
-mongoose.connect(uri, { useNewUrlParser:true, useCreateIndex: true })
-.catch(err => {
-    console.error('App starting error:', err.stack);
-});
+mongoose.connect(process.env.MONGODB_URI || uri);
+
+// mongoose.connect(uri, { useNewUrlParser:true, useCreateIndex: true })
+// .catch(err => {
+//     console.error('App starting error:', err.stack);
+// });
 
 
 const connection = mongoose.connection;
