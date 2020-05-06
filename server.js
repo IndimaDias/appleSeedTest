@@ -17,7 +17,7 @@ app.use(fileUpload());
 //     app.use(express.static(path.join(__dirname, 'client/build')));
 //   }
 
-app.use(express.static(path.join(__dirname, "client", "build")));
+app.use(express.static(path.join(__dirname, "client/build")));
 
 const uri =  process.env.HEROKU_URI||process.env.ATLAS_URI
 // console.log(uri);
@@ -39,9 +39,9 @@ const imageRouter  = require('./routes/image');
 app.use('/business', businessRouter);
 app.use('/image', imageRouter);
 
-app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "client", "build", "index.html"));
-});
+// app.get("*", (req, res) => {
+//     res.sendFile(path.join(__dirname, "client", "build", "index.html"));
+// });
 
 app.listen(port, () => {
     console.log('Server is running on port ' + port);
