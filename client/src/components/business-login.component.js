@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import './css/business-login.components.css';
-import { useHistory } from "react-router-dom";
+// import { useHistory } from "react-router-dom";
 
 
 
@@ -45,7 +45,7 @@ export default class BusinessLogin extends Component {
 
     onSubmit(e) {
         e.preventDefault();
-        const history = useHistory();
+        // const history = useHistory();
         const user = {
             username: this.state.username,
             password: this.state.password
@@ -56,7 +56,7 @@ export default class BusinessLogin extends Component {
             .then(res=> {
                 console.log(res.data);
                 //  window.location = '/add';
-                history.push("/edit/" + res.data);
+                // history.push("/edit/" + res.data);
             //    window.open("/edit/" + res.data, "_self");
                 //    window.location.assign('/edit/'+ res.data);
             //   this.props.history.push('/edit/'+ res.data); // <--- The page you want to redirect your user to.
