@@ -3,9 +3,13 @@ import axios from 'axios';
 import './css/business-login.components.css';
 import { useHistory } from "react-router-dom";
 
+const history = useHistory();
+
 export default class BusinessLogin extends Component {
+
+
     constructor(props) {
-        const history = useHistory();
+     
         super(props);
 
         this.onChangeUsername = this.onChangeUsername.bind(this);
