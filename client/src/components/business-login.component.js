@@ -3,7 +3,7 @@ import axios from 'axios';
 import './css/business-login.components.css';
 import { useHistory } from "react-router-dom";
 
-const history = useHistory();
+
 
 export default class BusinessLogin extends Component {
 
@@ -25,7 +25,7 @@ export default class BusinessLogin extends Component {
         }
     }
 
-
+   
     componentDidMount() {
         
     }
@@ -45,7 +45,7 @@ export default class BusinessLogin extends Component {
 
     onSubmit(e) {
         e.preventDefault();
-
+        const history = useHistory();
         const user = {
             username: this.state.username,
             password: this.state.password
