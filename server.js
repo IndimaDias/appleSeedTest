@@ -22,7 +22,9 @@ app.use(express.static(path.join(__dirname, "client/build")));
 const uri =  process.env.HEROKU_URI||process.env.ATLAS_URI
 // console.log(uri);
 
-mongoose.connect(process.env.MONGODB_URI || uri);
+mongoose.connect(process.env.MONGODB_URI || uri,
+    { useNewUrlParser:true, 
+      useCreateIndex: true });
 
 // mongoose.connect(uri, { useNewUrlParser:true, useCreateIndex: true })
 // .catch(err => {
