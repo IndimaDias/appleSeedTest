@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import './css/business-login.components.css';
-
+import { useHistory } from "react-router-dom";
 
 export default class BusinessLogin extends Component {
     constructor(props) {
+        const history = useHistory();
         super(props);
 
         this.onChangeUsername = this.onChangeUsername.bind(this);
@@ -50,7 +51,8 @@ export default class BusinessLogin extends Component {
        axios.post('business/login/', user)
             .then(res=> {
                 console.log(res.data);
-                 window.location = '/add';
+                //  window.location = '/add';
+                history.push("/edit/" + res.data);
             //    window.open("/edit/" + res.data, "_self");
                 //    window.location.assign('/edit/'+ res.data);
             //   this.props.history.push('/edit/'+ res.data); // <--- The page you want to redirect your user to.
