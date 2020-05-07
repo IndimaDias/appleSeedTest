@@ -50,7 +50,7 @@ export default class BusinessLogin extends Component {
        axios.post('business/login/', user)
             .then(res=> {
                 console.log(res.data);
-                 window.location = 'add';
+                 window.location = '/add';
             //    window.open("/edit/" + res.data, "_self");
                 //    window.location.assign('/edit/'+ res.data);
             //   this.props.history.push('/edit/'+ res.data); // <--- The page you want to redirect your user to.
